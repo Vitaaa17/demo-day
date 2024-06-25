@@ -11,8 +11,6 @@ RUN apt-get update && apt-get install -y \
 
 COPY . ./
 
-RUN git clone --quiet --no-tags --single-branch --branch main --depth 1 https://github.com/ilhamr1783/Bookrecomsystem /workspace/source
-
 RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8080
